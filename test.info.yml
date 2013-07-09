@@ -4,9 +4,10 @@ description: 'Test Description.'
 package: Custom
 version: 1.0
 core: 8.x
-dependencies:
-  - node
+#dependencies:
+#  - node
 tags:
   - custom
   - test
 hidden: false
+configure: admin/config/development/test

@@ -15,7 +15,7 @@ class TestSettingsForm extends SystemConfigFormBase {
 		$form['test_show_extra_text'] = array(
   		'#type' => 'checkbox',
   		'#title' => t('Show extra text on test page'),
-  		'#default_value' => config('test.settings')->get('test_show_extra_text')
+  		'#default_value' => $config->get('test_show_extra_text'),
   	);
   	return parent::buildForm($form, $form_state);
 	}

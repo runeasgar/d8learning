@@ -9,11 +9,11 @@ use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 class TestController {
 
   public function helloworld($name = '') {
-    $output = '<p>hello world';
+    $output = '<p>hello';
     if (!empty($name)) {
-     	$output .= " and {$name}!</p>"; 
+     	$output .= " {$name}!</p>"; 
     } else { 
-       $output .= '!</p>'; 
+       $output .= " person I don't know!</p>"; 
     }
     if (config('test.settings')->get('test_show_extra_text')) {
     	$output .= '<p>extra text turned on by setting</p>';
@@ -22,7 +22,7 @@ class TestController {
   }  
   
   public function onKernelResponse(GetResponseEvent $event) {
-    die('finally');
+    die('kernel response event listener finally worked');
   }
 
 }

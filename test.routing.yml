@@ -7,8 +7,8 @@ test:
     _permission: 'access content'
     
 test_settings:
-  pattern: 'admin/config/test'
+  pattern: 'admin/config/development/test'
   defaults:
     _form: '\Drupal\test\Form\TestSettingsForm'
   requirements:
-    _permission: 'administer test module'
+    _permission: 'administer site configuration'
