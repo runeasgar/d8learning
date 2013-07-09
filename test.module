@@ -10,7 +10,6 @@ function test_menu() {
 		'title' => 'Test Module Configuration',
 		'route_name' => 'test_settings'
 	);
-	
 	return $items;
 }
 

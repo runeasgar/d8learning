@@ -1,12 +1,13 @@
 test:
-  pattern: '/test'
+  pattern: 'test/{name}'
   defaults:
     _content: '\Drupal\test\Controller\TestController::helloworld'
+    name: ''
   requirements:
     _permission: 'access content'
     
 test_settings:
-  pattern: '/admin/config/test'
+  pattern: 'admin/config/test'
   defaults:
     _form: '\Drupal\test\Form\TestSettingsForm'
   requirements:

@@ -1,0 +1,6 @@
+services:
+  kernel.listener.mm200:
+    class: Drupal\test\Controllers\TestController
+    tags:
+        - { name: kernel.event_listener, event: kernel.response, method: onKernelResponse }
+      
