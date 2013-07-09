@@ -1,0 +1,24 @@
+<?php
+
+function test_menu() {
+	$items = array();
+	$items['test'] = array(
+		'title' => 'test',
+		'route_name' => 'test'
+	);
+	$items ['admin/config/test'] = array(
+		'title' => 'Test Module Configuration',
+		'route_name' => 'test_settings'
+	);
+	
+	return $items;
+}
+
+function test_permission() {
+	$items = array(
+		'administer test module' => array(
+			'title' => t('Administer test module')
+		)
+	);
+	return $items;
+}
