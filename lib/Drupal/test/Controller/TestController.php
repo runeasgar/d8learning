@@ -19,10 +19,6 @@ class TestController {
     	$output .= '<p>extra text turned on by setting</p>';
     }
     return $output;
-  }  
-  
-  public function onKernelResponse(GetResponseEvent $event) {
-    die('kernel response event listener finally worked');
   }
 
 }
