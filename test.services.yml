@@ -1,5 +1,5 @@
 services:
-  kernel.listener.mm200:
-    class: Drupal\test\Controllers\TestController
+  test_subscriber:
+    class: Drupal\test\EventSubscriber\TestSubscriber
     tags:
-        - { name: kernel.event_listener, event: kernel.response, method: onKernelResponse }
+      - { name: event_subscriber }
