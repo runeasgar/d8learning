@@ -3,8 +3,6 @@
 namespace Drupal\test\Controller;
 
 use Drupal\test\Form\TestSettingsForm;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 
 class TestController {
 

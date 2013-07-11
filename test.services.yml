@@ -1,5 +1,0 @@
-services:
-  test_subscriber:
-    class: Drupal\test\EventSubscriber\TestSubscriber
-    tags:
-      - { name: event_subscriber }
