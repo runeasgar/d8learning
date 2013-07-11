@@ -21,7 +21,6 @@ class TestSubscriber implements EventSubscriberInterface {
    *   The event to process.
    */
   public function onKernelResponse(FilterResponseEvent $event) {
-  	//echo "<pre>"; var_dump($event); echo "</pre>";
     $request = $event->getRequest();
     $response = $event->getResponse();
     if ($request->attributes->get('_maintenance') == MENU_SITE_OFFLINE) {
