@@ -1,4 +1,0 @@
-test_subscriber:
-    class: Drupal\test\EventSubscriber\TestSubscriber
-    tags:
-      - { name: test_subscriber }
